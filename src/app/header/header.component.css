@@ -1,0 +1,9 @@
+.p-element{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.parent{
+  background-color: #3b82f6;
+}
