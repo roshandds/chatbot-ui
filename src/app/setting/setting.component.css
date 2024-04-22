@@ -1,0 +1,37 @@
+ul {
+  list-style-type: none;
+}
+
+
+li{
+  padding: 2.2%;
+}
+
+.locationswitch{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.theinnerdiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+.title{
+  padding: 1%;
+    margin: 0% 1%;
+
+}
+
+
+.text{
+  padding-top: 1%;
+  padding-left: 2.3%;
+  padding-right: 2.3%;
+}

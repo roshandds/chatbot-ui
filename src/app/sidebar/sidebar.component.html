@@ -1,0 +1,22 @@
+ <div class="parent flex w-full ">
+  <div class="icons justify-content-between  border-right-1 border-blue-100">
+    <div class="icon p-4 border">
+<img src="{{messageicon}}" width="30px" alt="" (click)="gotochatbot()">
+    </div>
+    <div class="icon p-4">
+<img src="{{settingicon}}" width="30px" alt="" (click)="gotosettings()">
+    </div>
+    <div class="icon p-4 ">
+<img src="{{supporticon}}" width="30px" alt="" (click)="gotosupport()">
+    </div>
+    <div class="lowwericons ">
+      <div class="lasticon icon p-4 border " >
+  <img src="{{shareicon}}" width="30px" alt="" (click)="gotochatbot()">
+
+      </div>
+    </div>
+  </div>
+  <div class="router w-full">
+    <router-outlet></router-outlet>
+  </div>
+ </div>

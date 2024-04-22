@@ -1,0 +1,9 @@
+.lasticon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.icons{
+  height: calc(100vh - 65px);
+}
