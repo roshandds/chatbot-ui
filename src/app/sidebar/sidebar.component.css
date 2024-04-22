@@ -7,3 +7,15 @@
 .icons{
   height: calc(100vh - 65px);
 }
+
+
+@media(max-width:768px){
+  img{
+    width: 25px !important;
+    height: 25px !important;
+  }
+}
+
+.parent{
+  height: calc(100vh - 64.88px) !important;
+}

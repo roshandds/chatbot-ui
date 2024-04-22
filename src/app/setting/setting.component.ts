@@ -14,6 +14,7 @@ export class SettingComponent {
   accountIcon:string="../../assets/account.svg"
   notificationIcon:string="../../assets/notification-svgrepo-com.svg"
   locationIcon:string="../../assets/location.svg"
+  sidearrowIcon:string="../../assets/location.svg"
 
   showMap:boolean =false;
    KEY_VALUE_PAIR = new Map<string, string>([

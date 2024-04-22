@@ -1,22 +1,22 @@
  <div class="parent flex w-full ">
   <div class="icons justify-content-between  border-right-1 border-blue-100">
-    <div class="icon p-4 border">
-<img src="{{messageicon}}" width="30px" alt="" (click)="gotochatbot()">
+    <div class="icon p-3 border" (click)="gotochatbot()" [ngStyle]="{'background-color': currentRouteUrl === '/chatbot-ui' ? '#e5e5e5' : 'transparent'}">
+<img src="{{messageicon}}" width="30px" alt="" >
     </div>
-    <div class="icon p-4">
-<img src="{{settingicon}}" width="30px" alt="" (click)="gotosettings()">
+    <div class="icon p-3"   (click)="gotosettings()"  [ngStyle]="{'background-color': currentRouteUrl === '/setting' ? '#e5e5e5' : 'transparent'}" >
+<img src="{{settingicon}}" width="30px" alt="" >
     </div>
-    <div class="icon p-4 ">
-<img src="{{supporticon}}" width="30px" alt="" (click)="gotosupport()">
+    <div class="icon p-3 " (click)="gotosupport()" [ngStyle]="{'background-color': currentRouteUrl === '/support' ? '#e5e5e5' : 'transparent'}">
+<img src="{{supporticon}}" width="30px" alt="" >
     </div>
-    <div class="lowwericons ">
-      <div class="lasticon icon p-4 border " >
-  <img src="{{shareicon}}" width="30px" alt="" (click)="gotochatbot()">
+    <div class="lowwericons "  >
+      <div class="lasticon icon p-3 border " (click)="gotoshare()" [ngStyle]="{'background-color': currentRouteUrl === '/share' ? '#e5e5e5' : 'transparent'}">
+  <img src="{{shareicon}}" width="30px" alt="" >
 
       </div>
     </div>
   </div>
   <div class="router w-full">
-    <router-outlet></router-outlet>
+    <router-outlet style="height: 100%;"></router-outlet>
   </div>
  </div>

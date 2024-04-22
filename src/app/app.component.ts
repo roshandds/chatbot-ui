@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
@@ -12,4 +12,22 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 })
 export class AppComponent {
   title = 'chatbot';
+  menuitems:{}[]=[
+    {label:'chatbot-ui',route:'/chatbot-ui'},
+    {label:'setting',route:'/setting'},
+    {label:'support',route:'/support'}
+  ]
+  currentRouteUrl: string="";
+
+  constructor(private router: Router) { }
+
+  ngOnInit() {
+     this.router.events.subscribe(event => {
+       if (event instanceof NavigationEnd) {
+         this.currentRouteUrl = event.url;
+         console.log(this.currentRouteUrl,"currentroute");
+       }
+     });
+  }
+
 }

@@ -7,3 +7,32 @@
 .parent{
   background-color: #3b82f6;
 }
+
+
+button{
+  background-color: white !important;
+  border: none !important;
+}
+
+
+@media (max-width:900px){
+  .header{
+    font-size: 25px !important;
+
+  }
+  .logoimg{
+    width: 26px !important;
+    height: 36px !important;
+}
+}
+@media (max-width:450px){
+  .header{
+    font-size: 18px !important;
+
+  }
+  .logoimg{
+    width: 19px !important;
+    height: 30px !important;
+
+}
+}

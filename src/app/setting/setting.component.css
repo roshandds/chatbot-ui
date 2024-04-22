@@ -4,7 +4,11 @@ ul {
 
 
 li{
-  padding: 2.2%;
+    padding: 12px 0px;
+    border-bottom: 1px solid #d5d5d5;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 .locationswitch{
@@ -20,6 +24,7 @@ li{
   align-items: center;
   justify-content: center;
   gap: 8px;
+  font-size: 14px !important;
 }
 
 
@@ -34,4 +39,16 @@ li{
   padding-top: 1%;
   padding-left: 2.3%;
   padding-right: 2.3%;
+}
+
+
+.locationswitch p-inputswitch {
+  display: flex;
+}
+
+
+.icon{
+  width: 18px !important;
+  height: 18px !important;
+  object-fit: contain;
 }
