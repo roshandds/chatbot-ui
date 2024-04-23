@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { InputSwitchModule } from 'primeng/inputswitch';
+import { MapComponent } from '../map/map.component';
 @Component({
   selector: 'app-setting',
   standalone: true,
-  imports: [InputSwitchModule,FormsModule,CommonModule],
+  imports: [InputSwitchModule,FormsModule,CommonModule, MapComponent],
   templateUrl: './setting.component.html',
   styleUrl: './setting.component.css'
 })

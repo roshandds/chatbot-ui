@@ -1,16 +1,52 @@
-<div class="parent ">
-<div class="chat">
-  <ul>
-    @for(message of messages; track $index){
-      <li> <div class="chatui flex align-items-center"  [ngStyle]="{'justify-content':message.from === 'BOT' ? 'flex-start' : 'flex-end'}"><img src="../../assets/support.svg" width="20px" alt="logo">{{message.message}}</div>  </li>
+<div class="parent">
+  <div class="chat">
+    <ul>
+      @for(message of messages; track $index){
+      <li>
+        <div
+          class="chatui flex align-items-center"
+          [ngStyle]="{
+            'justify-content': message.from === 'BOT' ? 'start' : 'end',
+            'flex-direction': message.from === 'BOT' ? 'row' : 'row-reverse'
+          }"
+        >
+          <div
+            class="theinnerdiv"
+            [ngStyle]="{
 
-    }
-  </ul>
-</div>
-<div class="inputdiv flex justify-content-center align-items-center w-full">
-  <textarea rows="1" cols="30" [autoResize]="true"  pInputTextarea [(ngModel)]="inputtext"></textarea>
-  <!-- <p-button icon="pi pi-send" (onClick)="addMessage()"></p-button> -->
-  <p-button  (onClick)="addMessage()"> <img src="../../assets/send.svg"   alt="" width="25px"> </p-button>
+              'color': message.from === 'BOT' ? 'black' : 'white',
+              'flex-direction': message.from === 'BOT' ? 'row' : 'row-reverse'
+            }"
+          >
+            <div class="imgdiv">
+              <img class="botimg" [src]="message.profileImg" width="20px" alt="logo"  />
+            </div>
 
-</div>
+            <span class="textdiv" [ngStyle]="{
+              'background-color': message.from === 'BOT' ? 'white' : '#0098ff'}">{{message.message}}</span>
+          </div>
+        </div>
+      </li>
+
+      }
+    </ul>
+  </div>
+  <div class="inputdiv flex justify-content-center align-items-center w-full">
+    <textarea
+      rows="1"
+      cols="30"
+      [autoResize]="true"
+      pInputTextarea
+      [(ngModel)]="inputtext"
+    ></textarea>
+    <!-- <p-button icon="pi pi-send" (onClick)="addMessage()"></p-button> -->
+    <p-button (onClick)="addMessage()">
+      <img
+        width="24"
+        height="24"
+        src="https://img.icons8.com/material-rounded/24/ffffff/sent.png"
+        alt="sent"
+      />
+    </p-button>
+  </div>
 </div>

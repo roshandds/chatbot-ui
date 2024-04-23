@@ -15,11 +15,16 @@ export class ChatbotUiComponent {
   inputtext:string = ''
   messages: any[] = [{
     from: "BOT",
-    message: "Hi, I am a chatbot. How can I help you?"
-  },{
+    message: "Hi, I am a chatbot. How can I help you?",
+    profileImg:'../../assets/download.png'
+  }
+  ,{
     from: "HUMAN",
-    message: "Hi, I am a chatbot. How can I help you?"
-  }]
+    message: "Hi, I am a chatbot. How can I help you?",
+    profileImg:'../../assets/user35.png'
+    // profileImg:'https://img.icons8.com/fluency-systems-filled/35/guest-male.png'
+  }
+]
 
 
 

@@ -1,4 +1,4 @@
-* {
+body {
   background: #c8efff;
 }
 
@@ -15,7 +15,7 @@ textarea {
   padding: 2% !important;
   border: 1px solid #c2c2c2;
   height: 59px;
-    overflow: hidden;
+  overflow: hidden;
 
 }
 
@@ -23,14 +23,15 @@ p-button {
   position: absolute !important;
   left: 92%;
 
- }
-::ng-deep .inputdiv > p-button > button{
+}
+
+::ng-deep .inputdiv>p-button>button {
   border-radius: 50% !important;
-    height: 41px !important;
-    width: 39px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+  height: 41px !important;
+  width: 39px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .p-ripple p-element p-button p-component p-button-icon-only {
@@ -63,6 +64,7 @@ ul {
 }
 
 .chat {
+  background: #c8efff;
   flex: 1;
   /* Allow the chat section to grow and occupy remaining space */
   overflow-y: auto;
@@ -87,18 +89,48 @@ ul {
 
 
 
-.chatui{
+.chatui {
   justify-content: flex-end;
   word-break: break-all;
   /* width: 70%; */
-    padding: 25px 20px 25px 20px;
+  padding: 20px 20px 20x 20px;
 }
 
 
-@media(max-size:768px){
+@media(max-size:768px) {
 
-.chatui{
-padding: 25px 0px 25px 0px;
-}
+  .chatui {
+    padding: 25px 0px 25px 0px;
+  }
 }
 
+.theinnerdiv {
+  /* background: #0098ff; */
+  border-radius: 11px;
+  padding: 8px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.imgdiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px !important;
+  width: 40px !important;
+
+}
+
+.textdiv{
+  background-color: white;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.botimg{
+  object-fit: contain;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+}

@@ -20,7 +20,7 @@ shareicon:string='../../assets/shre.svg'
 
 router=inject(Router)
 
-currentRouteUrl:string="";
+currentRouteUrl:string="chatbot-ui";
 
 constructor(){}
 menuitems:{}[]=[
